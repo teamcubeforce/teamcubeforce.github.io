@@ -377,7 +377,7 @@ function videos_torneo(id_torneo){
     for(u=0;u<iTorneo[0].videos_torneo.length;u++){
       caja+=`<button class="video" onclick=verVideo("${iTorneo[0].videos_torneo[u].enlace}")>
                 <img src="https://img.youtube.com/vi/${iTorneo[0].videos_torneo[u].enlace_miniatura}/mqdefault.jpg" class="img_video">
-                <div class="play_video"><img src="img/icons/play.png" width="50"></div>
+                <div class="play_video"><img src="https://teamcubeforce.github.io/img/icons/play.png" width="50"></div>
               </button>`;
     }
     caja+="</div></div>";
