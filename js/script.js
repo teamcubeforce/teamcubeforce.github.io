@@ -362,7 +362,7 @@ function cerrar_vista_torneo(){
   torneo_conteiner.classList.toggle('mostrar_flex');
   conteiner_torneos.classList.toggle('ocultar');
   categorias_torneo=null;*/
-  location.href=`file:///C:/Users/User/Desktop/Pagina%20Web/Proyecto_Cube_Force/torneos.html`;
+  location.href=`https://teamcubeforce.github.io/torneos/`;
 }
 
 
@@ -424,7 +424,7 @@ function organizar_torneos(year){
         <div class="raya_2"></div>
         <div class="raya_3"></div>
         <div class="raya_4"></div>
-        <img src="img/torneos/${torneos[u].imagen}" alt="${torneos[u].nombre_torneo}_2022">
+        <img src="https://teamcubeforce.github.io/img/torneos/${torneos[u].imagen}" alt="${torneos[u].nombre_torneo}_2022">
       </button></div>`;  
     }
   }
@@ -475,7 +475,7 @@ async function resultados_torneo(id_torneo,id_person,nombre_person){
   document.getElementById("conteiner_resultados").innerHTML=`
   <div class="pantalladecarga">
             <div class="logo">
-                <img src="img/logoCubeForce.png" alt="logocubeforce" width="200">
+                <img src="https://teamcubeforce.github.io/img/logoCubeForce.png" alt="logocubeforce" width="200">
             </div>
             cargando...
         </div>`;
@@ -541,7 +541,7 @@ async function resultados_podiums(id_torneo,id_person,cat,array_categoria){
         if(aea[rp].pos<=3 && aea[rp].average!=-1){
           console.log(aea[rp]);
           elemento +=`<div class="podio"><div class="detalles_Podio">
-          <img src="img/categorias/${array_categoria[0].imagen}" width="50">`;
+          <img src="https://teamcubeforce.github.io/img/categorias/${array_categoria[0].imagen}" width="50">`;
           if(aea[rp].pos==1){
             cont=parseInt(document.getElementById("medallaOro").value);
             cont+=1;
@@ -626,7 +626,7 @@ function generar_vista_miembros(id_torneo, representantes){
 
 //Location Torneo
 function ir_torneo(id_torneo){
-  location.href=`file:///C:/Users/User/Desktop/Pagina%20Web/Proyecto_Cube_Force/torneos.html#${id_torneo}`;
+  location.href=`https://teamcubeforce.github.io/torneos/#${id_torneo}`;
   console.log(id_torneo);
   cargarCompetencia(id_torneo);
   torneo_conteiner.classList.toggle('mostrar_flex');
@@ -667,7 +667,7 @@ async function cargarCompetencia(id_torneo){
                 <span>${iTorneo[0].fecha}</span>
             </div>
             <div class="logo_torneo">
-                <img src="img/torneos/${iTorneo[0].imagen}" alt="Imagen_Logo_${iTorneo[0].id_torneo_wca}" width="100">
+                <img src="https://teamcubeforce.github.io/img/torneos/${iTorneo[0].imagen}" alt="Imagen_Logo_${iTorneo[0].id_torneo_wca}" width="100">
             </div>
             <div class="medallero" id="medallero">
                 <div class="medalla oro">
@@ -795,11 +795,11 @@ function tiempos_records(aea,id_competidor){
               </table>`;
         }
         conteiner_four_categorias=conteiner_four_categorias+`
-        <div class="conteiner_categoria"><div class="img"><img src="img/categorias/${category[u].imagen}" width="50"></div>
+        <div class="conteiner_categoria"><div class="img"><img src="https://teamcubeforce.github.io/img/categorias/${category[u].imagen}" width="50"></div>
           <div class="tables"><table class="single"><tr><th class="bgtemp">Single</th><th>NR</th><th>CR</th><th>WR</th></tr><tr><td class="bgtemp">${obtenerTiempo(aea[id_cat].single.best)}</td><td>${aea[id_cat].single.country_rank}</td><td>${aea[id_cat].single.continent_rank}</td><td>${aea[id_cat].single.world_rank}</td></tr></table>${tabla_media}</div>
         </div>`;
         if(ou%4==0){
-          botones_list+=`<button onclick="mostrar_lista(${ou_2},'${id_competidor}')"><img src="img/logoCubeForce.png" alt="logocubeforce" width="15"></button>`;
+          botones_list+=`<button onclick="mostrar_lista(${ou_2},'${id_competidor}')"><img src="https://teamcubeforce.github.io/img/logoCubeForce.png" alt="logocubeforce" width="15"></button>`;
           ou_2++;
           conteiner_four_categorias+='</div>';
           results_categorias+=conteiner_four_categorias;
@@ -809,7 +809,7 @@ function tiempos_records(aea,id_competidor){
       }
     }
     if((ou-1)%4!=0){
-      botones_list+=`<button onclick="mostrar_lista(${ou_2},'${id_competidor}')"><img src="img/logoCubeForce.png" alt="logocubeforce" width="15"></button>`;
+      botones_list+=`<button onclick="mostrar_lista(${ou_2},'${id_competidor}')"><img src="https://teamcubeforce.github.io/img/logoCubeForce.png" alt="logocubeforce" width="15"></button>`;
       conteiner_four_categorias+='</div>';
       results_categorias+=conteiner_four_categorias;
     }
@@ -989,7 +989,7 @@ async function confirmar(id_miembro, id_person){
         console.log(retador);
         console.log(miembro);
         contenedor+=`<div class="titulo_desafio"><div class="cont_nombre"><div class="nombre">${miembro.person.name}</div><div class="caja_nombre miembro"></div></div>
-        <img src="img/img_basicas/cont_versus.png" width="80" alt="Imagen VS CubeForce">
+        <img src="https://teamcubeforce.github.io/img/img_basicas/cont_versus.png" width="80" alt="Imagen VS CubeForce">
         <div class="cont_nombre"><div class="nombre">${retador.person.name}</div><div class="caja_nombre desafiante"></div></div></div>`;
         /*Versus de Single*/
         contenedor+=`<div class="tabla_desafio"><h5>-- Single --</h5><table>
@@ -1003,7 +1003,7 @@ async function confirmar(id_miembro, id_person){
           if(retador.personal_records[ind_cat]!=undefined && miembro.personal_records[ind_cat]!=undefined){
             contenedor+=`
             <tr>
-              <td><img src="img/categorias/${category[u].imagen}" width="40" title="${category[u].nombre_categoria}" alt="${category[u].nombre_categoria}"></td>
+              <td><img src="https://teamcubeforce.github.io/img/categorias/${category[u].imagen}" width="40" title="${category[u].nombre_categoria}" alt="${category[u].nombre_categoria}"></td>
               ${ganador(miembro.personal_records[ind_cat].single.best,retador.personal_records[ind_cat].single.best)}
             </tr>`;
           }
@@ -1022,7 +1022,7 @@ async function confirmar(id_miembro, id_person){
             if(retador.personal_records[ind_cat]!=undefined && miembro.personal_records[ind_cat]!=undefined){
               contenedor+=`
               <tr>
-                <td><img src="img/categorias/${category[u].imagen}" width="40" title="${category[u].nombre_categoria}" alt="${category[u].nombre_categoria}"></td>
+                <td><img src="https://teamcubeforce.github.io/img/categorias/${category[u].imagen}" width="40" title="${category[u].nombre_categoria}" alt="${category[u].nombre_categoria}"></td>
                 ${ganador(miembro.personal_records[ind_cat].average.best,retador.personal_records[ind_cat].average.best)}
               </tr>`;
             }
@@ -1066,7 +1066,7 @@ async function confirmar(id_miembro, id_person){
     }  
   }else{
     document.getElementById("desafio").innerHTML=`
-    <img src="img/a.jpg" width="200">
+    <img src="https://teamcubeforce.github.io/img/a.jpg" width="200">
     `;
   }
 }
@@ -1076,7 +1076,7 @@ async function desafio(){
   let desafiante=document.getElementById("desafiante_id").value;
   document.getElementById("desafio").innerHTML=`<div class="pantalladecarga">
     <div class="logo">
-        <img src="img/logoCubeForce.png" alt="logocubeforce" width="200">
+        <img src="https://teamcubeforce.github.io/img/logoCubeForce.png" alt="logocubeforce" width="200">
     </div>
     cargando...
   </div>`;
@@ -1123,7 +1123,7 @@ async function mostrarPerfil(id_miembro,pos_foto){
             <div class="conteiner">
               <div class="header_perfil">
               <h2>${datos.person.name}</h2>
-              <img src="img/miembros/${miembros[pos_foto].foto_miembro}" alt="" width=200>
+              <img src="https://teamcubeforce.github.io/img/miembros/${miembros[pos_foto].foto_miembro}" alt="" width=200>
               </div>
             <table>
               <tr>
@@ -1166,7 +1166,7 @@ async function mostrarPerfil(id_miembro,pos_foto){
 
 /*Location Miembro */
 function ir(perfil_wcaid, pos_foto){
-  location.href=`file:///C:/Users/User/Desktop/Pagina%20Web/Proyecto_Cube_Force/miembros.html#CF${perfil_wcaid}`;
+  location.href=`https://teamcubeforce.github.io/miembros/#CF${perfil_wcaid}`;
   mostrarPerfil(perfil_wcaid,pos_foto)
   document.getElementById('div_miembros').style.transform="translateX(0%)";
   contenedor_perfiles.classList.toggle('mostrar');
@@ -1187,7 +1187,7 @@ function mostrar_miembros(){
       cajita = cajita + `<div class="conteiner_cajita_miembro">
           <div class="cajita_miembro class_right_left">
               <div class="fotito">
-              <img src="img/miembros/${miembros[i].foto_miembro}" alt="">
+              <img src="https://teamcubeforce.github.io/img/miembros/${miembros[i].foto_miembro}" alt="">
               </div>
               <div class="nombre">
                   ${miembros[i].nombre_miembro}
@@ -1204,7 +1204,7 @@ function mostrar_miembros(){
       cajita2 = cajita2 + `<div class="conteiner_cajita_miembro">
           <div class="cajita_miembro class_left_right">
               <div class="fotito">
-              <img src="img/miembros/${miembros[i].foto_miembro}" alt="">
+              <img src="https://teamcubeforce.github.io/img/miembros/${miembros[i].foto_miembro}" alt="">
               </div>
               <div class="nombre">
                   ${miembros[i].nombre_miembro}
@@ -1229,29 +1229,29 @@ function mostrar_miembros(){
 inicio();
 
 function inicio(){
-  if(location.href==`file:///C:/Users/User/Desktop/Pagina%20Web/Proyecto_Cube_Force/torneos.html`){
+  if(location.href==`https://teamcubeforce.github.io/torneos/`){
     document.getElementById("list_nombres_torneos").innerHTML=organizar_nombres_torneos();
     document.getElementById("conteiner_list_torneos_2022").innerHTML=organizar_torneos("2022");
     document.getElementById("conteiner_list_torneos_2023").innerHTML=organizar_torneos("2023");
     confirmo_hay_year=true;
-  }else if(location.href==`file:///C:/Users/User/Desktop/Pagina%20Web/Proyecto_Cube_Force/miembros.html`){
+  }else if(location.href==`https://teamcubeforce.github.io/miembros/`){
     mostrar_miembros();
   }
   for(o=0;o<torneos.length;o++){
-    if(location.href==`file:///C:/Users/User/Desktop/Pagina%20Web/Proyecto_Cube_Force/torneos.html#${torneos[o].id_torneo_wca}`){
+    if(location.href==`https://teamcubeforce.github.io/torneos/#${torneos[o].id_torneo_wca}`){
         document.getElementById("list_nombres_torneos").innerHTML=organizar_nombres_torneos();
         document.getElementById("conteiner_list_torneos_2022").innerHTML=organizar_torneos("2022");
         document.getElementById("conteiner_list_torneos_2023").innerHTML=organizar_torneos("2023");
         confirmo_hay_year=true;
-        location.href=`file:///C:/Users/User/Desktop/Pagina%20Web/Proyecto_Cube_Force/torneos.html#${torneos[o].id_torneo_wca}`;
+        location.href=`https://teamcubeforce.github.io/torneos/#${torneos[o].id_torneo_wca}`;
         cargarCompetencia(torneos[o].id_torneo_wca);
         torneo_conteiner.classList.toggle('mostrar_flex');
         conteiner_torneos.classList.toggle('ocultar');
     }
   }
   for(i=0;i<miembros.length;i++){
-      if(location.href==`file:///C:/Users/User/Desktop/Pagina%20Web/Proyecto_Cube_Force/miembros.html#CF${miembros[i].id_miembro}`){
-          location.href=`file:///C:/Users/User/Desktop/Pagina%20Web/Proyecto_Cube_Force/miembros.html#CF${miembros[i].id_miembro}`;
+      if(location.href==`https://teamcubeforce.github.io/miembros/#CF${miembros[i].id_miembro}`){
+          location.href=`https://teamcubeforce.github.io/miembros/#CF${miembros[i].id_miembro}`;
           mostrarPerfil(miembros[i].id_miembro,i);
           document.getElementById('div_miembros').style.transform="translateX(0%)";
           contenedor_perfiles.classList.toggle('mostrar');
