@@ -1769,6 +1769,10 @@ body::-webkit-scrollbar-track,.resultados_miembros::-webkit-scrollbar-track,.lis
         background-position: center; 
     }
 
+    .presentacion .header_titulo{
+        padding: 230px 0px 0px;
+    }
+
     .historia.seccion .contenedor_historias{
         width: calc(100% * 8);
     }
