@@ -173,12 +173,15 @@ main{
 .presentacion .header_titulo{
     width: 100%;
     height: 50vh;
-    padding: 280px 0px 0px;
     font-size: 30px;
     overflow: hidden;
+    position: relative;
 }
 
 .presentacion .header_titulo h1{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     text-align: center;
 }
 
@@ -1769,10 +1772,6 @@ body::-webkit-scrollbar-track,.resultados_miembros::-webkit-scrollbar-track,.lis
         background-position: center; 
     }
 
-    .presentacion .header_titulo{
-        padding: 230px 0px 0px;
-    }
-
     .historia.seccion .contenedor_historias{
         width: calc(100% * 8);
     }
@@ -1825,7 +1824,6 @@ body::-webkit-scrollbar-track,.resultados_miembros::-webkit-scrollbar-track,.lis
 
     .presentacion .header_titulo{
         height: 40vh;
-        padding: 150px 0px 0px;
         font-size: 40px;
     }
     .presentacion .caja_texto{
@@ -1946,7 +1944,6 @@ body::-webkit-scrollbar-track,.resultados_miembros::-webkit-scrollbar-track,.lis
     
     .presentacion .header_titulo{
         height: 25vh;
-        padding: 120px 0px 0px;
         font-size: 20px;
     }
     .presentacion .caja_texto{
@@ -2116,9 +2113,11 @@ body::-webkit-scrollbar-track,.resultados_miembros::-webkit-scrollbar-track,.lis
     main{
         width: 100%;
     }
+    .logo_titulo {
+        font-size: 45px;
+    }
     .presentacion .header_titulo{
         height: 20vh;
-        padding: 90px 0px 0px;
     }
     .caja_texto .text .text_editors{
         padding: 10px 0px;
@@ -2146,7 +2145,6 @@ body::-webkit-scrollbar-track,.resultados_miembros::-webkit-scrollbar-track,.lis
 @media only screen and (max-height: 426px){
     .presentacion .header_titulo{
         height: 30vh;
-        padding: 90px 0px 0px;
         font-size: 20px;
     }
     .caja_texto .text .text_editors{
@@ -2163,7 +2161,6 @@ body::-webkit-scrollbar-track,.resultados_miembros::-webkit-scrollbar-track,.lis
     }
     .presentacion .header_titulo{
         height: 25vh;
-        padding: 50px 0px 0px;
         font-size: 20px;
     }
     .caja_texto .text{
