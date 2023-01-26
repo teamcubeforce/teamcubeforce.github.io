@@ -1243,7 +1243,7 @@ function inicio(){
         document.getElementById("conteiner_list_torneos_2022").innerHTML=organizar_torneos("2022");
         document.getElementById("conteiner_list_torneos_2023").innerHTML=organizar_torneos("2023");
         confirmo_hay_year=true;
-        location.href=`https://teamcubeforce.com/miembros/#${torneos[o].id_torneo_wca}`;
+        location.href=`https://teamcubeforce.com/torneos/#${torneos[o].id_torneo_wca}`;
         cargarCompetencia(torneos[o].id_torneo_wca);
         torneo_conteiner.classList.toggle('mostrar_flex');
         conteiner_torneos.classList.toggle('ocultar');
