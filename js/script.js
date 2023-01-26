@@ -626,7 +626,7 @@ function generar_vista_miembros(id_torneo, representantes){
 
 //Location Torneo
 function ir_torneo(id_torneo){
-  location.href=`https://teamcubeforce.com/torneos/#${id_torneo}`;
+  location.href=`https://www.teamcubeforce.com/torneos/#${id_torneo}`;
   console.log(id_torneo);
   cargarCompetencia(id_torneo);
   torneo_conteiner.classList.toggle('mostrar_flex');
@@ -1166,7 +1166,7 @@ async function mostrarPerfil(id_miembro,pos_foto){
 
 /*Location Miembro */
 function ir(perfil_wcaid, pos_foto){
-  location.href=`https://teamcubeforce.com/miembros/#CF${perfil_wcaid}`;
+  location.href=`https://www.teamcubeforce.com/miembros/#CF${perfil_wcaid}`;
   mostrarPerfil(perfil_wcaid,pos_foto)
   document.getElementById('div_miembros').style.transform="translateX(0%)";
   contenedor_perfiles.classList.toggle('mostrar');
@@ -1229,29 +1229,29 @@ function mostrar_miembros(){
 inicio();
 
 function inicio(){
-  if(location.href==`https://teamcubeforce.com/torneos/`){
+  if(location.href==`https://www.teamcubeforce.com/torneos/`){
     document.getElementById("list_nombres_torneos").innerHTML=organizar_nombres_torneos();
     document.getElementById("conteiner_list_torneos_2022").innerHTML=organizar_torneos("2022");
     document.getElementById("conteiner_list_torneos_2023").innerHTML=organizar_torneos("2023");
     confirmo_hay_year=true;
-  }else if(location.href==`https://teamcubeforce.com/miembros/`){
+  }else if(location.href==`https://www.teamcubeforce.com/miembros/`){
     mostrar_miembros();
   }
   for(o=0;o<torneos.length;o++){
-    if(location.href==`https://teamcubeforce.com/torneos/#${torneos[o].id_torneo_wca}`){
+    if(location.href==`https://www.teamcubeforce.com/torneos/#${torneos[o].id_torneo_wca}`){
         document.getElementById("list_nombres_torneos").innerHTML=organizar_nombres_torneos();
         document.getElementById("conteiner_list_torneos_2022").innerHTML=organizar_torneos("2022");
         document.getElementById("conteiner_list_torneos_2023").innerHTML=organizar_torneos("2023");
         confirmo_hay_year=true;
-        location.href=`https://teamcubeforce.com/torneos/#${torneos[o].id_torneo_wca}`;
+        location.href=`https://www.teamcubeforce.com/torneos/#${torneos[o].id_torneo_wca}`;
         cargarCompetencia(torneos[o].id_torneo_wca);
         torneo_conteiner.classList.toggle('mostrar_flex');
         conteiner_torneos.classList.toggle('ocultar');
     }
   }
   for(i=0;i<miembros.length;i++){
-      if(location.href==`https://teamcubeforce.com/miembros/#CF${miembros[i].id_miembro}`){
-          location.href=`https://teamcubeforce.com/miembros/#CF${miembros[i].id_miembro}`;
+      if(location.href==`https://www.teamcubeforce.com/miembros/#CF${miembros[i].id_miembro}`){
+          location.href=`https://www.teamcubeforce.com/miembros/#CF${miembros[i].id_miembro}`;
           mostrarPerfil(miembros[i].id_miembro,i);
           document.getElementById('div_miembros').style.transform="translateX(0%)";
           contenedor_perfiles.classList.toggle('mostrar');
