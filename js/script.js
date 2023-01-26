@@ -64,7 +64,7 @@ let miembros=[
     'id_miembro': "2019VALE16",
     'nombre_miembro': "Jack Valencia",
     'estado': "actual_miembro",
-    'foto_miembro': "MiembroCubeForce.jpg"
+    'foto_miembro': "JackValencia.jpg"
   },
   /*Antiguos Miembros */
   {
