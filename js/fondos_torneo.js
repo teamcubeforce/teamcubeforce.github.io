@@ -24,7 +24,7 @@ function quitar_fondo(id_torneo){
 
 document.getElementById("activate_LimaSummer2023").addEventListener("mouseover", function(e){
     colocar_fondo("LimaSummer2023");
-    fondo_torneo.style.backgroundImage="url(https://teamcubeforce.github.io/img/torneos/torneosinfondo.jpg)";
+    fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/torneosinfondo.jpg)";
     fondo_torneo.style.backgroundPosition="center";
     },false);
   document.getElementById("activate_LimaSummer2023").addEventListener("mouseout", function(e){
@@ -33,7 +33,7 @@ document.getElementById("activate_LimaSummer2023").addEventListener("mouseover",
   
   document.getElementById("activate_TCGPowerUp2022").addEventListener("mouseover", function(e){
     colocar_fondo("TCGPowerUp2022");
-    fondo_torneo.style.backgroundImage="url(https://teamcubeforce.github.io/img/torneos/tcgPowerUp2022.jpg)";
+    fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/tcgPowerUp2022.jpg)";
     fondo_torneo.style.backgroundPosition="center";
     },false);
   document.getElementById("activate_TCGPowerUp2022").addEventListener("mouseout", function(e){
@@ -42,7 +42,7 @@ document.getElementById("activate_LimaSummer2023").addEventListener("mouseover",
   
   document.getElementById("activate_SinDNFenelPalacio2022").addEventListener("mouseover", function(e){
     colocar_fondo("SinDNFenelPalacio2022");
-    fondo_torneo.style.backgroundImage="url(https://teamcubeforce.github.io/img/torneos/sinDNF2022.jpg)";
+    fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/sinDNF2022.jpg)";
     fondo_torneo.style.backgroundPosition="center";
     },false);
   document.getElementById("activate_SinDNFenelPalacio2022").addEventListener("mouseout", function(e){
@@ -51,7 +51,7 @@ document.getElementById("activate_LimaSummer2023").addEventListener("mouseover",
   
   document.getElementById("activate_PeruNationals2022").addEventListener("mouseover", function(e){
     colocar_fondo("PeruNationals2022");
-    fondo_torneo.style.backgroundImage="url(https://teamcubeforce.github.io/img/torneos/peruNationals2022.jpg)";
+    fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/peruNationals2022.jpg)";
     fondo_torneo.style.backgroundPosition="center";
     },false);
   document.getElementById("activate_PeruNationals2022").addEventListener("mouseout", function(e){
@@ -60,7 +60,7 @@ document.getElementById("activate_LimaSummer2023").addEventListener("mouseover",
   
   document.getElementById("activate_RealCube2022").addEventListener("mouseover", function(e){
     colocar_fondo("RealCube2022");
-    fondo_torneo.style.backgroundImage="url(https://teamcubeforce.github.io/img/torneos/realCube2022.jpg)";
+    fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/realCube2022.jpg)";
     fondo_torneo.style.backgroundPosition="center";
     },false);
   document.getElementById("activate_RealCube2022").addEventListener("mouseout", function(e){
@@ -69,7 +69,7 @@ document.getElementById("activate_LimaSummer2023").addEventListener("mouseover",
   
   document.getElementById("activate_SchoolWinterLima2022").addEventListener("mouseover", function(e){
     colocar_fondo("SchoolWinterLima2022");
-    fondo_torneo.style.backgroundImage="url(https://teamcubeforce.github.io/img/torneos/schoolWinter2022.jpg)";
+    fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/schoolWinter2022.jpg)";
     fondo_torneo.style.backgroundPosition="center";
     },false);
   document.getElementById("activate_SchoolWinterLima2022").addEventListener("mouseout", function(e){
@@ -78,7 +78,7 @@ document.getElementById("activate_LimaSummer2023").addEventListener("mouseover",
   
   document.getElementById("activate_TCGNuevaGeneracion2022").addEventListener("mouseover", function(e){
     colocar_fondo("TCGNuevaGeneracion2022");
-    fondo_torneo.style.backgroundImage="url(https://teamcubeforce.github.io/img/torneos/tcgNuevaGeneracion.jpg)";
+    fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/tcgNuevaGeneracion.jpg)";
     fondo_torneo.style.backgroundPosition="center 65%";
     },false);
   document.getElementById("activate_TCGNuevaGeneracion2022").addEventListener("mouseout", function(e){
@@ -87,7 +87,7 @@ document.getElementById("activate_LimaSummer2023").addEventListener("mouseover",
   
   document.getElementById("activate_LimaCuberano2022").addEventListener("mouseover", function(e){
     colocar_fondo("LimaCuberano2022");
-    fondo_torneo.style.backgroundImage="url(https://teamcubeforce.github.io/img/torneos/cuberano2022.jpg)";
+    fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/cuberano2022.jpg)";
     fondo_torneo.style.backgroundPosition="center 50%";
     },false);
   document.getElementById("activate_LimaCuberano2022").addEventListener("mouseout", function(e){
