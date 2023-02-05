@@ -1177,7 +1177,7 @@ function ir(perfil_wcaid, pos_foto){
 /*Funcion Principal */
 function mostrar_miembros(){
   cajita=`<div class="contenedor_miembros js-scroll scrolled">
-  <h2 class="class_opacidad">Miembros Cube Force</h2>
+  <h1 class="class_opacidad">Miembros | Team Cube Force</h1>
   <div class="div_contenedor_miembros">`;
   cajita2=`<div class="contenedor_miembros_antiguos js-scroll">
   <h2 class="class_opacidad">Miembros Antiguos</h2>
@@ -1187,7 +1187,7 @@ function mostrar_miembros(){
       cajita = cajita + `<div class="conteiner_cajita_miembro">
           <div class="cajita_miembro class_right_left">
               <div class="fotito">
-              <img src="https://www.teamcubeforce.com/img/miembros/${miembros[i].foto_miembro}" alt="">
+              <img src="https://www.teamcubeforce.com/img/miembros/${miembros[i].foto_miembro}" alt="Miembro - ${miembros[i].nombre_miembro}">
               </div>
               <div class="nombre">
                   ${miembros[i].nombre_miembro}
@@ -1204,7 +1204,7 @@ function mostrar_miembros(){
       cajita2 = cajita2 + `<div class="conteiner_cajita_miembro">
           <div class="cajita_miembro class_left_right">
               <div class="fotito">
-              <img src="https://www.teamcubeforce.com/img/miembros/${miembros[i].foto_miembro}" alt="">
+              <img src="https://www.teamcubeforce.com/img/miembros/${miembros[i].foto_miembro}" alt="ExMiembro - ${miembros[i].nombre_miembro}">
               </div>
               <div class="nombre">
                   ${miembros[i].nombre_miembro}

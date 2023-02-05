@@ -526,7 +526,7 @@ footer .redessociales nav ul li{
     list-style: none;
 }
 
-.contenedor .contenedor_miembros h2,.contenedor .contenedor_miembros_antiguos h2{
+.contenedor .contenedor_miembros h1,.contenedor .contenedor_miembros_antiguos h2{
     font-size: 40px;
     text-align: center;
     color: white;
@@ -1105,7 +1105,7 @@ footer .redessociales nav ul li{
     /* padding: 20px 100px; */
 }
 
-.titulo_CF_torneo h2{
+.titulo_CF_torneo h1{
     font-size: 40px;
     color: white;
     animation: opacidad 1s backwards 2s;
