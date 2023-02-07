@@ -119,12 +119,21 @@ let miembros=[
 ]
 let torneos=[
   {
+    'id_torneo_wca': "SpeedcuberPeruILima2023",
+    'nombre_torneo': "Speedcuber Peru I Lima 2023",
+    'year': "2023",
+    'fecha': "Marzo 4 - 5",
+    'imagen': "torneosinfondo.jpg",
+    'representantes': [],
+    'videos_torneo': []
+  },
+  {
     'id_torneo_wca': "LimaSummer2023",
     'nombre_torneo': "Lima Summer 2023",
     'year': "2023",
     'fecha': "Febrero 4 - 5",
-    'imagen': "torneosinfondo.jpg",
-    'representantes': [],
+    'imagen': "limaSummer2023.jpg",
+    'representantes': ["2019ALLC01","2022NUNE01","2014RUIZ10","2018QUIS04","2020CABE02","2021ROME02","2020MAYT01","2019VALE16"],
     'videos_torneo': []
   },
   {
