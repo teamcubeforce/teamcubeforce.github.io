@@ -22,9 +22,18 @@ function quitar_fondo(id_torneo){
   fondo_torneo.style.animation="";
 }
 
+document.getElementById("activate_SpeedcuberPeruILima2023").addEventListener("mouseover", function(e){
+  colocar_fondo("SpeedcuberPeruILima2023");
+  fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/torneosinfondo.jpg)";
+  fondo_torneo.style.backgroundPosition="center";
+  },false);
+document.getElementById("activate_SpeedcuberPeruILima2023").addEventListener("mouseout", function(e){
+  quitar_fondo("SpeedcuberPeruILima2023");
+  },false);
+
 document.getElementById("activate_LimaSummer2023").addEventListener("mouseover", function(e){
     colocar_fondo("LimaSummer2023");
-    fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/torneosinfondo.jpg)";
+    fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/limaSummer2023.jpg)";
     fondo_torneo.style.backgroundPosition="center";
     },false);
   document.getElementById("activate_LimaSummer2023").addEventListener("mouseout", function(e){
