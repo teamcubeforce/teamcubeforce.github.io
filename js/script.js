@@ -547,7 +547,7 @@ async function resultados_podiums(id_torneo,id_person,cat,array_categoria){
   if (aea.length>=1){
     for(rp=0;rp<aea.length;rp++){
       if(aea[rp].round_type_id=="f" || aea[rp].round_type_id=="c"){
-        if(aea[rp].pos<=3 && aea[rp].average>-1){
+        if(aea[rp].pos<=3 && aea[rp].average>=-1){
           console.log(aea[rp]);
           elemento +=`<div class="podio"><div class="detalles_Podio">
           <img src="https://www.teamcubeforce.com/img/categorias/${array_categoria[0].imagen}" width="50">`;
