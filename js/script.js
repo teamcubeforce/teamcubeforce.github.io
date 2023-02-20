@@ -511,7 +511,6 @@ async function resultados_torneo(id_torneo,id_person,nombre_person){
               <th class="result_important">Single</th>
           </tr>`;
       for(rt=0;rt<aea3.length;rt++){
-        console.log(aea3[rt]);
         elemento+=`<tr><td>${aea3[rt].pos}</td>`;
           if(aea3[rt].round_type_id==1 || aea3[rt].round_type_id=="d"){
             elemento+="<td>Primera Ronda</td>";
@@ -548,7 +547,6 @@ async function resultados_podiums(id_torneo,id_person,cat,array_categoria){
     for(rp=0;rp<aea.length;rp++){
       if(aea[rp].round_type_id=="f" || aea[rp].round_type_id=="c"){
         if(aea[rp].pos<=3 && aea[rp].average>=-1){
-          console.log(aea[rp]);
           elemento +=`<div class="podio"><div class="detalles_Podio">
           <img src="https://www.teamcubeforce.com/img/categorias/${array_categoria[0].imagen}" width="50">`;
           if(aea[rp].pos==1){
@@ -623,7 +621,6 @@ async function resultados_persona(id_torneo,id_person){
   elemento+=`<button onclick="resultados_torneo('${id_torneo}','${id_person}','${datos.person.name}')"> 
     ${datos.person.name}
   </button>`;
-  console.log(id_person);
   document.getElementById("lista_enlaces_miembros").innerHTML=elemento;
 }
 
@@ -636,7 +633,6 @@ function generar_vista_miembros(id_torneo, representantes){
 //Location Torneo
 function ir_torneo(id_torneo){
   location.href=`https://www.teamcubeforce.com/torneos/#${id_torneo}`;
-  console.log(id_torneo);
   cargarCompetencia(id_torneo);
   torneo_conteiner.classList.toggle('mostrar_flex');
   conteiner_torneos.classList.toggle('ocultar');
@@ -669,7 +665,6 @@ async function cargarCompetencia(id_torneo){
       const iTorneo=torneos.filter((element,index)=>{
         return element.id_torneo_wca==id_torneo;
       });
-      console.log(iTorneo);
       cajita+=`
       <div class="title_torneo">
                 <h2>${datos.name}</h2>
@@ -937,8 +932,6 @@ async function torneos_desafio(id_torneo, id_miembro, id_person){
       const resultados_miembro_cat = await cargar_person_torneo_cat(resultados_miembro,category[ind_cat].id_categoria);
       const resultados_person_cat = await cargar_person_torneo_cat(resultados_person,category[ind_cat].id_categoria);
       if(resultados_miembro_cat.length!=0 && resultados_person_cat.length!=0){
-        console.log(resultados_miembro_cat);
-        console.log(resultados_person_cat);
         elemento+=`<div class="torneo_results_vs"><h6>${category[ind_cat].nombre_categoria}</h6>`;
         for(rt=0;rt<resultados_miembro_cat.length;rt++){
           try{
@@ -952,7 +945,6 @@ async function torneos_desafio(id_torneo, id_miembro, id_person){
             }else if(resultados_miembro_cat[rt].round_type_id=="f" || resultados_miembro_cat[rt].round_type_id=="c"){
               elemento+=`<table class="tabla_results"><tr><th class="th_ronda">Final</th></tr>`;
             }
-          console.log(resultados_miembro_cat[rt]);
           elemento+=`<tr><th>-_-</th><th>${resultados_miembro_cat[0].name}</th><th>${resultados_person_cat[0].name}</th></tr>`;
           elemento+=`<tr><th>Posicion</th><td>${resultados_miembro_cat[rt].pos}</td><td>${resultados_person_cat[rt].pos}</td></tr>`;
           for(tiempo=0;tiempo<=5;tiempo++){
@@ -995,8 +987,6 @@ async function confirmar(id_miembro, id_person){
       if(respuesta.status === 200 && respuesta2.status==200){
         const retador = await respuesta.json();
         const miembro = await respuesta2.json();
-        console.log(retador);
-        console.log(miembro);
         contenedor+=`<div class="titulo_desafio"><div class="cont_nombre"><div class="nombre">${miembro.person.name}</div><div class="caja_nombre miembro"></div></div>
         <img src="https://www.teamcubeforce.com/img/img_basicas/cont_versus.png" width="80" alt="Imagen VS CubeForce">
         <div class="cont_nombre"><div class="nombre">${retador.person.name}</div><div class="caja_nombre desafiante"></div></div></div>`;
@@ -1075,7 +1065,7 @@ async function confirmar(id_miembro, id_person){
     }  
   }else{
     document.getElementById("desafio").innerHTML=`
-    <img src="https://www.teamcubeforce.com/img/a.jpg" width="200">
+    <img src="https://www.teamcubeforce.com/img/img_basicas/a.jpg" width="200">
     `;
   }
 }
