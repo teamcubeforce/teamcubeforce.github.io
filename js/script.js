@@ -123,9 +123,14 @@ let torneos=[
     'nombre_torneo': "Speedcuber Peru I Lima 2023",
     'year': "2023",
     'fecha': "Marzo 4 - 5",
-    'imagen': "torneosinfondo.jpg",
-    'representantes': [],
-    'videos_torneo': []
+    'imagen': "speedcuberPeru1_2023.jpg",
+    'representantes': ["2019ALLC01","2020GARC07","2022NUNE01","2014RUIZ10","2018QUIS04","2020CABE02","2021ROME02","2020MAYT01"],
+    'videos_torneo': [
+      {
+        'enlace':"https://www.youtube.com/embed/pSY4mAJzsyk",
+        'enlace_miniatura':"pSY4mAJzsyk"
+      }
+    ]
   },
   {
     'id_torneo_wca': "LimaSummer2023",
@@ -134,7 +139,12 @@ let torneos=[
     'fecha': "Febrero 4 - 5",
     'imagen': "limaSummer2023.jpg",
     'representantes': ["2019ALLC01","2022NUNE01","2014RUIZ10","2018QUIS04","2020CABE02","2021ROME02","2020MAYT01","2019VALE16"],
-    'videos_torneo': []
+    'videos_torneo': [
+      {
+        'enlace':"https://www.youtube.com/embed/mKXdhAGXp7w",
+        'enlace_miniatura':"mKXdhAGXp7w"
+      }
+    ]
   },
   {
     'id_torneo_wca': "TCGPowerUp2022",
