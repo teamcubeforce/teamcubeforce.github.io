@@ -119,6 +119,15 @@ let miembros=[
 ]
 let torneos=[
   {
+    'id_torneo_wca': "HuancayoSummer2023",
+    'nombre_torneo': "Huancayo Summer 2023",
+    'year': "2023",
+    'fecha': "Marzo 18 - 19",
+    'imagen': "huancayoSummer2023.jpg",
+    'representantes': ["2020MAYT01"],
+    'videos_torneo': []
+  },
+  {
     'id_torneo_wca': "SpeedcuberPeruILima2023",
     'nombre_torneo': "Speedcuber Peru I Lima 2023",
     'year': "2023",

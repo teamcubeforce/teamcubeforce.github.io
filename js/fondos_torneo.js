@@ -22,6 +22,15 @@ function quitar_fondo(id_torneo){
   fondo_torneo.style.animation="";
 }
 
+document.getElementById("activate_HuancayoSummer2023").addEventListener("mouseover", function(e){
+  colocar_fondo("HuancayoSummer2023");
+  fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/huancayoSummer2023.jpg)";
+  fondo_torneo.style.backgroundPosition="center";
+  },false);
+document.getElementById("activate_HuancayoSummer2023").addEventListener("mouseout", function(e){
+  quitar_fondo("HuancayoSummer2023");
+  },false);
+  
 document.getElementById("activate_SpeedcuberPeruILima2023").addEventListener("mouseover", function(e){
   colocar_fondo("SpeedcuberPeruILima2023");
   fondo_torneo.style.backgroundImage="url(https://www.teamcubeforce.com/img/torneos/speedcuberPeru1_2023.jpg)";
