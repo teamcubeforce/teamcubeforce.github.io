@@ -60,12 +60,6 @@ let miembros=[
     'estado': "actual_miembro",
     'foto_miembro': "DavidQuispe.jpg"
   },
-  {
-    'id_miembro': "2019VALE16",
-    'nombre_miembro': "Jack Valencia",
-    'estado': "actual_miembro",
-    'foto_miembro': "JackValencia.jpg"
-  },
   /*Antiguos Miembros */
   {
     'id_miembro': "2018BENI07",
@@ -108,6 +102,12 @@ let miembros=[
     'nombre_miembro': "Joaquín Alberto Osorio Ramírez",
     'estado': "antiguo_miembro",
     'foto_miembro': "MiembroCubeForce.jpg"
+  },
+  {
+    'id_miembro': "2019VALE16",
+    'nombre_miembro': "Jack Valencia",
+    'estado': "antiguo_miembro",
+    'foto_miembro': "JackValencia.jpg"
   }
   /*,
   {
@@ -118,6 +118,15 @@ let miembros=[
   }*/
 ]
 let torneos=[
+  {
+    'id_torneo_wca': "CubeForceLima2023",
+    'nombre_torneo': "Cube Force Lima 2023",
+    'year': "2023",
+    'fecha': "Mayo 20 - 21",
+    'imagen': "cubeForceLima2023.jpg",
+    'representantes': ["2021TAYA01","2019ALLC01","2020GARC07","2014RUIZ10","2022NUNE01","2020CABE02","2020MAYT01","2022VIVA01","2021ROME02","2018QUIS04"],
+    'videos_torneo': []
+  },
   {
     'id_torneo_wca': "HuancayoSummer2023",
     'nombre_torneo': "Huancayo Summer 2023",
